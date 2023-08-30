@@ -1,24 +1,35 @@
-# README
+# Template-rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby
+  - 3.1.4
+- Rails
+  - 7.0.7.2
 
-Things you may want to cover:
 
-* Ruby version
+## Usage
 
-* System dependencies
+### Build
 
-* Configuration
+```bash
+$ docker-compose build
+```
 
-* Database creation
+### Starting
 
-* Database initialization
+```bash
+$ docker-compose up
+```
 
-* How to run the test suite
+### DB setting
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+$ docker-compose run -rm web rails db:create db:migrate
+```
 
-* Deployment instructions
 
-* ...
+## Local run rails command
+
+```bash
+$ cd web
+$ rails db:migrate
+```
